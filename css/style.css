@@ -62,7 +62,7 @@ img{
 }
 .theme-title{
   font-size: 90px;
-  font-weight: 400px;
+  font-weight: 700;
   color: #74cfae;
   margin-bottom: 20px;
 }
@@ -78,13 +78,13 @@ img{
   padding-top: 50px;
 }
 .cando-left{
-  display: inline-block;
+  float: left;
   vertical-align: bottom;
-  width: 40%;
+  width: 400px;
 }
 .cando-right{
-  display: inline-block;
-  width: 59%;
+  float: right;
+  width: 700px;
   vertical-align: top;
   text-align: center;
 }
@@ -216,9 +216,6 @@ margin-top: 0px;
     width: 97%;
   }
   /* TAB_WHAT WE CAN DO? */
-  .cando-inner{
-    text-align: center;
-  }
   .cando-left{
     display: inline;
   }
@@ -235,27 +232,16 @@ margin-top: 0px;
   .work-img{
     margin-left: 0px;
     display: block;
+    text-align: center;
   }
-  .work-img:nth-child(-n+3){
-    margin-bottom: 0px;
-  }
-  .work-img:nth-child(n+4){
-    margin-bottom: 0px;
-  }
-  .work-img:nth-child(3n+1){
-    margin-left: 0px;
-  }
-  .work-img:nth-child(3n){
-    margin-bottom: 80px;
-  }
-
   .work-bottom-text{
     display: block;
     padding-bottom: 40px;
+    margin: 0 auto;
+    width: auto;
   }
   .work-bottom-btn{
     margin-left: 0px;
-    display: block;
   }
   /* skills */
   .skills{

@@ -64,11 +64,11 @@ img{
   font-size: 90px;
   font-weight: 700;
   color: #74cfae;
-  margin-bottom: 20px;
 }
 .theme-subtitle{
   font-size: 30px;
   color: #c0c0c0;
+  margin-top: 20px;
 }
 
 
@@ -108,23 +108,25 @@ img{
   font-size: 24px;
   color: #333;
 }
-.work-img-box{
+.work-img-wrap{
   text-align: initial;
   font-size: 0px;
   margin-top: 40px;
 }
-.work-img{
+.work-img-box{
   display: inline-block;
   margin-top: 80px;
   margin-left: 100px;
+}
+.work-img{
   opacity: 0.7;
   transition: 0.3s;
 }
-.work-img:nth-child(3n+1){
+.work-img-box:nth-child(3n+1){
   margin-left: 0px;
 }
-.work-img:nth-child(-n+3){
-margin-top: 0px;
+.work-img-box:nth-child(-n+3){
+  margin-top: 0px;
 }
 .work-bottom-text-box{
   margin-top: 90px;
@@ -152,6 +154,7 @@ margin-top: 0px;
   opacity: 1;
   transition: 0.3s;
 }
+
 
 /* skills */
 .skills{
@@ -216,48 +219,166 @@ margin-top: 0px;
     width: 97%;
   }
   /* TAB_WHAT WE CAN DO? */
+  .cando{
+    padding-bottom: 20px;
+  }
   .cando-left{
-    display: inline;
+    float: none;
+    display: block;
+    width: 97%;
   }
   .cando-right{
-    display: inline;
-    margin-left: 0px;
-    text-align: center;
+    float: none;
+    display: block;
+    margin-top: 20px;
+    width: 97%;
+  }
+  .cando-right-title{
+    padding-top: 0px;
   }
   .cando-right-text{
-    padding-bottom: 20px;
+    width: 950px;
+    margin: 0 auto;
   }
 
   /* OUR LATEST WORK */
-  .work-img{
-    margin-left: 0px;
-    display: block;
+  .work-img-wrap{
     text-align: center;
   }
-  .work-bottom-text{
+  .work-img-box{
+    margin-left: 0px;
     display: block;
-    padding-bottom: 40px;
-    margin: 0 auto;
+    margin-top: 0px;
+  }
+  .work-img-box:nth-child(3n+1){
+    margin-top: 80px;
+  }
+  .work-img-box:first-child{
+    margin-top: 0px;
+  }
+  .work-bottom-text-box{
+    margin-top: 80px;
+  }
+  .work-bottom-text{
     width: auto;
   }
   .work-bottom-btn{
     margin-left: 0px;
-  }
-  /* skills */
-  .skills{
-    padding-bottom: 88px;
-  }
-  .skills-title-text{
-    padding: 70px 0px;
+    margin-top: 40px;
   }
 
+  /* skills */
   .skills-items{
     display: block;
     margin-left: 0px;
-    margin-bottom: 88px;
+    margin-top: 88px;
   }
-  .skills-items:last-child{
-    margin-bottom: 0px;
+  .skills-items:first-child{
+    margin-top: 0px;
   }
 
+}
+
+/* SP */
+@media screen and (max-width:767px){
+  .inner{
+    width: 97%;
+  }
+    /* header */
+  .menu-btn{
+    display: none;
+  }
+  .hamburger-menu{
+    float: right;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  .hamburger-line{
+    height: 3px;
+    color: #ddd;
+    margin-top: 5px;
+    width: 30px;
+    background-color: #ddd;
+  }
+  .hamburger-line:first-child{
+    margin-top: 0px;
+  }
+
+  /* main */
+  /* Bolt Theme */
+  .theme-tite-box{
+    padding: 160px 0px 130px 0px;
+  }
+  .theme-title{
+    font-size: 80px;
+  }
+
+  /* TAB_WHAT WE CAN DO? */
+  .cando{
+    padding-bottom: 20px;
+  }
+  .cando-left{
+    float: none;
+    display: block;
+    width: 97%;
+  }
+  .cando-right{
+    float: none;
+    display: block;
+    margin-top: 20px;
+    width: 97%;
+  }
+  .cando-right-title{
+    padding-top: 0px;
+  }
+
+   /* OUR LATEST WORK */
+   .work-img-wrap{
+    text-align: center;
+  }
+  .work-img-box{
+    margin-left: 0px;
+    display: block;
+    margin-top: 0px;
+  }
+  .work-img-box:nth-child(3n+1){
+    margin-top: 80px;
+  }
+  .work-img-box:first-child{
+    margin-top: 0px;
+  }
+  .work-bottom-text-box{
+    margin-top: 80px;
+  }
+  .work-bottom-text{
+    width: 97%;
+  }
+  .work-bottom-btn{
+    margin-left: 0px;
+    margin-top: 40px;
+  }
+
+  /* skills */
+  .skills-items{
+    display: block;
+    margin-left: 0px;
+    margin-top: 88px;
+  }
+
+    /* sns */
+  .sns{
+    padding: 50px 15px;
+    text-align: center;
+  }
+  .sns-icon-box{
+    display: block;
+    width: 100%;
+  }
+
+  /* footer */
+  .footer-text{
+    width: 97%;
+  }
 }

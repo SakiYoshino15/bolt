@@ -92,7 +92,7 @@ img{
   font-size: 24px;
   color: #fff;
   padding-top: 20px;
-  padding-bottom: 35px;
+  margin-bottom: 35px;
 }
 .cando-right-text{
   font-size: 20px;
@@ -121,6 +121,7 @@ img{
 .work-img{
   opacity: 0.7;
   transition: 0.3s;
+  display: inline-block;
 }
 .work-img-box:nth-child(3n+1){
   margin-left: 0px;
@@ -180,7 +181,7 @@ img{
 .skills-text{
   color: #fff;
   font-size: 16px;
-  line-height: 50px;
+  margin-top: 20px;
 }
 
 
@@ -225,13 +226,13 @@ img{
   .cando-left{
     float: none;
     display: block;
-    width: 97%;
+    width: 100%;
   }
   .cando-right{
     float: none;
     display: block;
     margin-top: 20px;
-    width: 97%;
+    width: 100%;
   }
   .cando-right-title{
     padding-top: 0px;
@@ -239,7 +240,7 @@ img{
   .cando-right-text{
     width: 950px;
     margin: 0 auto;
-    width: 97%;
+    width: 100%;
   }
 
   /* OUR LATEST WORK */
@@ -277,7 +278,15 @@ img{
   .skills-items:first-child{
     margin-top: 0px;
   }
-
+    /* sns */
+    .sns{
+    padding: 50px 15px;
+    text-align: center;
+    display: flex;
+  }
+  .sns-icon-box{
+    width: 24%;
+  }
 }
 
 /* SP */
@@ -323,13 +332,13 @@ img{
   .cando-left{
     float: none;
     display: block;
-    width: 97%;
+    width: 100%;
   }
   .cando-right{
     float: none;
     display: block;
     margin-top: 20px;
-    width: 97%;
+    width: 100%;
   }
   .cando-right-title{
     padding-top: 0px;
@@ -354,7 +363,7 @@ img{
     margin-top: 80px;
   }
   .work-bottom-text{
-    width: 97%;
+    width: 100%;
   }
   .work-bottom-btn{
     margin-left: 0px;
@@ -380,6 +389,6 @@ img{
 
   /* footer */
   .footer-text{
-    width: 97%;
+    width: 100%;
   }
 }
